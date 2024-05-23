@@ -82,7 +82,7 @@ export const DOCUMENTATION  = [
    },
    {
       title:'API OMDb Open Movie Database',
-      url:'https://www.omdbapi.com/',
+      url:'https://www.omdbapi.com/', 
       favorite:false
    },
    {

@@ -1,12 +1,11 @@
 import './style.css';
-import { DOCUMENTATION } from './constants';
+import { DOCUMENTATION } from './constants'; 
 
 const toggleButton = document.querySelector('#menu-toggle')
 const inputSearch = document.querySelector('#menu-search');
 const menuContentElement = document.querySelector('#menu-content')
 const  searchBlockElement = document.querySelector('#menu-content > .search');
-const favoritesListElement = document.querySelector(
-    '#menu-content > .favorites'
+const favoritesListElement = document.querySelector('#menu-content > .favorites'
 );
 const getFavoriteTemplate = (title, url) => {
 return `
