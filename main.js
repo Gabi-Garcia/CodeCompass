@@ -15,7 +15,7 @@ return `
 `;
 };  
 const setUpFavoritesList = () => {
-const favorites = DOCUMENTATION.filter((doc)=> doc.favorite);
+const favorites = DOCUMENTATION.filter((doc));
 const favoritesUl = document.createElement('ul');
 favorites.forEach((favorite)=>{
     const favoriteTemplate = getFavoriteTemplate(favorite.title, favorite.url)
@@ -55,3 +55,4 @@ const toggleOpenMenu = (click) => {
 toggleButton.addEventListener('click', toggleOpenMenu);
 inputSearch.addEventListener('input', handleSearch);
 setUpFavoritesList();
+
