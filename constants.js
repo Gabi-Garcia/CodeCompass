@@ -306,3 +306,102 @@ export const DOCUMENTATION  = [
       favorite:false
    },
 ]
+
+export const VIDEOS = [
+   {
+      url:"https://www.youtube.com/watch?v=tP42hCXf-Ro",
+      title:"Tu primera APP con ANGULAR 11" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=INeJQ_5fwYM",
+      title:"CRUD Angular-Node-Express-TypeScript-Sequelize & MySQL" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=XXMczd98pTY",
+      title:"Angular Login-NodeJS Express TypeScript Sequelize MySQL y Jwt" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=H4tKnc2Cdmg&t=18s",
+      title:"Angular RxJS Tutorial-Buscador de Peliculas"
+   },
+   {
+      url:"https://www.youtube.com/watch?v=I808gGh9RTU",
+      title:"Angular login-Firebase Authentication" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=JsNMnXD-NRM",
+      title:"Angular-Aplicación de Presupuesto" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=lp2_Pq3kOfY",
+      title:"Cómo subir una página/aplicación web a Firebase y configurar Dominio" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=2jRYxuuWGFI",
+      title:"CRUD Angular Material-Node-Express-TypeScript & MySQL" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=qSV-xNDUQJU",
+      title:"Angular-Consume una API REST-App Noticias" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=2jRYxuuWGFI&t=52s",
+      title:"Angular Material-Node-Express-TypeScript & MySQL-CRUD" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=QJPQ3XdG11s",
+      title:"Cómo desplegar página web GRATIS. Tutorial usando Netlify y GitHub" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=44ziZ12rJwU",
+      title:"¿Cómo usar GitHub?-¡Todo lo que necesitás saber!" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=a-HMnyv75TQ&t=628s",
+      title:"Firebase Hosting - Subir una Pagina Web a Firebase" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=P4K59gr8sw0",
+      title:"Deploy Angular a Firebase Hosting" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=c7ytUzTz9ik" ,
+      title:"Acelerando el desarrollo de Angular apps con la ayuda de ChatGPT-4" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=VtNXgiLaw1E&t=13s",
+      title:"Como subir un proyecto ANGULAR a GitHub Pages en menos de '5!" 
+   },
+   {
+      url:"https://www.youtube.com/@codrrdev",
+      title:"Codear es nuestra pasión<strong>{codrr}</strong>" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=T1QFGwOnQxQ",
+      title:"NODEJS de Crea una REST API Rest escalable y sostenible con Typescript y Express" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=Sg5l0rwZKs4",
+      title:"Dockeriza tu API REST de Node.js en minutos con Docker" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=fUgxxhI_bvc",
+      title:"De Novato a Ninja: Aprende TypeScript - curso intensivo (#1)" 
+   },
+   {
+      url:"https://www.youtube.com/watch?v=L1ZSk-vPVKI",
+      title:"De Novato a Ninja: Aprende TypeScript - curso intensivo (#2)" 
+   },
+   {
+      url:"https://www.youtube.com/@OpenBootcamp/playlists",
+      title:"Contenido gratuito que se adapta a ti-<strong>OpenBootcamp" 
+   }
+]
+
+
+export const toggleButton = document.querySelector('#menu-toggle')
+export const inputSearch = document.querySelector('#menu-search');
+export const menuContentElement = document.querySelector('#menu-content');
+export const searchBlockElement = document.querySelector('#menu-content > .search');
+export const favoritesListElement = document.querySelector('#menu-content > .favorites'); 
+export const tutoriales = document.getElementById('tutoriales');

@@ -29,8 +29,9 @@
 /*******************************************************************************/
 /*****************************MEDIA QUERY MOBILE FIRST*************************/
 /******************************************************************************/
-  @media(min-width:320px) and (max-width:768px) {
+@media(min-width:320px) and (max-width:768px) {
 body{
+  padding: 10px;
   width: 100%;
 }    
 header{
@@ -50,12 +51,13 @@ header{
 header > .navbar{
   width: 100%;
   display: flex;
-  flex-direction:row;
+  flex-direction:column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  padding:3%;
   margin-top:10px;
   position: relative;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
 }
 .navbar > .links{
   width: 100%;
@@ -102,26 +104,24 @@ header > .navbar > .menu-content{
 header > .navbar > .menu-content--open{
   transition: all 200ms ease-in-out;
   opacity:1;
-  width:70%;
   margin-left:0;
-  margin-top:10px;
-  background-color: white;
+  margin-top:20px;
+  padding: 10px;
 }
 .search {
   border-left: 1px solid var(--secondary-color);
-  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
-  margin-left:0px;
-  /* border: 1px solid red; */
+  margin: auto;
+  border: none;
 }
 .favorite-element > a{
   font-size: 0.8rem;
   color: var(--secondary-color);
-  color: black;
   cursor: pointer;
+  color: white;
 }
 .cajaArriba{
   display: flex;
@@ -141,10 +141,10 @@ main{
   margin-top:0px;
 }
 h1{
-  display: none;
-  text-align: center;
-  margin: auto;
+  font-size: 4rem;
+  justify-content: center;
   margin-top:0px;
+  text-align: center;
 }
 h2{
   margin: auto;
@@ -154,21 +154,29 @@ h2{
 #menu-toggle{
   display: flex;
   width:200px;
+  height: 50px;
   padding:10px;
   border-radius: 10px;
   border: 2px solid white;
   color: #262626;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bolder;
-  margin: auto;
-  margin-top: 5px;
+  font-size: 1.3rem;
+  /* margin: auto; */
+  margin-top:40px;
   background-color: gray;
   justify-content: center;
   cursor: pointer;
+  position: relative;
+  /* border: 1px solid yellow; */
 }
+
 #menu-search{
-  text-align: center;
-  padding: 5px;
+        height: 40px;
+        margin-top:0px;
+        text-align: center;
+        padding: 10px;
+        /* border:1px solid blue  */
 }
 #sobreMi{
   display: flex;
@@ -179,9 +187,9 @@ h2{
 }
 #sobreMi p{
   text-align: center;
-padding: 5px;
+padding: 10px;
 border-radius: 5px;
-font-size: small;
+font-size: 0.9rem;
 border: 1px solid white;
 }
 #tutoriales > p{
@@ -197,8 +205,8 @@ border: 1px solid white;
   display: flex;
   flex-wrap: wrap;
   flex-direction:column;
-  font-size: x-small;
-  padding: 5px;
+  font-size: 0.8rem;
+  padding: 10px;
   margin-top: 10px;
   border-radius: 5px;
   border: 1px solid white;
@@ -223,37 +231,29 @@ footer{
   flex-wrap: wrap;
   flex-direction: column;
   width: 100%;
-  margin-top:50px;
   padding:30px;
+  margin: auto;
+  margin-top:150px;
+  /* border: 1px solid red; */
 }
-footer ul{
-  /* border-top:1px solid white; */
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 30px;
-  padding: 10px;
-}
-footer ul li{
-  display: flex;
-  flex-wrap: wrap;
-}
-footer ul li a .imgFooter{
-  width: 25px;
-  height: 25px;
-}
-footer ul li a .imgFooter img{
-  width:100%;
-  height:100%;
-  border-radius: 5px;
+footer a{
+  text-align: center;
+  justify-content: center;
+  width: 90%;
+  margin: auto;
+  text-decoration: none;
+  cursor: pointer;
+  /* border: 1px solid yellow; */
 }
 footer p{
   margin: auto;
+  text-align: center;
+  justify-content: center;
   margin-top:0px;
   display: flex;
   padding:1%;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
+  color: white;
 }
 }
 /********************************************************************************/
@@ -328,8 +328,9 @@ footer p{
   h1{
     text-align: center;
     margin: auto;
-    margin-top:30px;
-    font-size:5rem;
+    margin-top:40px;
+    font-size:7rem;
+    /* border: 1px solid yellow; */
   }
   #menu-toggle{
     display: flex;
@@ -341,10 +342,10 @@ footer p{
     color: #262626;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     margin: auto;
     margin-top: 50px;
-    background-color: gray;
+    background-color: rgb(187, 183, 183);
     cursor: pointer;
     justify-content: center;
     text-align: center;
@@ -379,6 +380,7 @@ footer p{
     text-align: center;
     padding: 10px;
     border-radius:7px ;
+    margin: auto;
   }
   .search {
     width: 100%;
@@ -443,6 +445,7 @@ footer p{
     margin-top:30px;
     padding: 5px;
     text-align: center;
+    /* border:1px solid red */
   }
   #sobreMi p{
   text-align: center;
@@ -452,6 +455,7 @@ footer p{
   /* border: 1px solid white; */
   }
   #tutoriales > p{
+    margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
   text-align: center;
@@ -465,7 +469,7 @@ footer p{
     flex-direction:row;
     gap: 15px;
     padding:20px;
-    margin-top: 10px;
+    margin-top: 20px;
     border-radius: 5px;
     text-align: center;
     border: 1px solid white;
@@ -493,34 +497,28 @@ footer p{
     flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
-    margin-top:50px;
     padding:30px;
-    /* border-top:1px solid white; */
+    margin: auto;
+    margin-top:150px;
+    /* border: 1px solid red; */
   }
-  footer ul{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 70px;
-  }
-  footer ul li{
-    display: flex;
-    flex-wrap: wrap;
-  }
-  footer ul li a .imgFooter{
-    width:25px;
-    height:25px;
-  }
-  footer ul li a .imgFooter img{
-    width:100%;
-    height:100%;
+  footer a{
+    text-align: center;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    text-decoration: none;
+    cursor: pointer;
+    /* border: 1px solid yellow; */
   }
   footer p{
     margin: auto;
-    margin-top:15px;
+    text-align: center;
+    justify-content: center;
+    margin-top:0px;
     display: flex;
     padding:1%;
     font-size: 1rem;
+    color: white;
   }
 }

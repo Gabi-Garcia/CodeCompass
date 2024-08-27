@@ -1,12 +1,32 @@
 import './style.css';
-import { DOCUMENTATION } from './constants'; 
+import { DOCUMENTATION, VIDEOS, toggleButton, inputSearch, menuContentElement, searchBlockElement, favoritesListElement,tutoriales } from './constants'; 
 
-const toggleButton = document.querySelector('#menu-toggle')
-const inputSearch = document.querySelector('#menu-search');
-const menuContentElement = document.querySelector('#menu-content')
-const  searchBlockElement = document.querySelector('#menu-content > .search');
-const favoritesListElement = document.querySelector('#menu-content > .favorites'
-);
+const getFavouritesVideos = () =>{
+    return`
+    <h2> Tutoriales Recomendados</h2>
+    <p>¡Estás a punto de sumergirte en un océano de conocimiento!
+    Aquí tienes una selección cuidadosa de los tutoriales más útiles y educativos disponibles en la web. 
+    Estos tutoriales abarcan una variedad de lenguajes de programación, tecnologías y temas relacionados, 
+    para que puedas aprender y mejorar tus habilidades de programación de manera efectiva.
+    </p>
+    <ul id="videos-list" class="lista"></ul>
+    `
+} 
+tutoriales.innerHTML = getFavouritesVideos()
+
+const videosList = document.getElementById('videos-list')
+VIDEOS.forEach(video => {
+    const li = document.createElement('li')
+
+    const a = document.createElement('a')
+    a.href = video.url;
+    a.textContent = video.title
+    a.target = "_blank"
+
+    li.appendChild(a);
+    videosList.appendChild(li)
+})
+
 const getFavoriteTemplate = (title, url) => {
 return `
 <li class="favorite-element">
@@ -30,6 +50,7 @@ const handleSearch = (e)=> {
     const filteredDocumentation = DOCUMENTATION.filter((doc) =>{
         const normalizeTitle = normalizeText(doc.title);
         return normalizeTitle.includes(normalizeValue);
+     
     });
     const searchUl = document.createElement('ul');
     searchUl.id = 'search-ul';
@@ -46,13 +67,17 @@ const handleSearch = (e)=> {
         priviousUl.remove();
     }
     searchBlockElement.append(searchUl)
-    value = ""
+    // value = ""
 }
 const toggleOpenMenu = (click) => {
     menuContentElement.classList.toggle('menu-content--open')
   
 }
+
+//Eventos
 toggleButton.addEventListener('click', toggleOpenMenu);
 inputSearch.addEventListener('input', handleSearch);
+//Lista de favoritos
 setUpFavoritesList();
+
 
