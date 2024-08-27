@@ -374,7 +374,7 @@ export const VIDEOS = [
    },
    {
       url:"https://www.youtube.com/@codrrdev",
-      title:"Codear es nuestra pasión<strong>{codrr}</strong>" 
+      title:"Codear es nuestra pasión {codrr}" 
    },
    {
       url:"https://www.youtube.com/watch?v=T1QFGwOnQxQ",
@@ -394,7 +394,7 @@ export const VIDEOS = [
    },
    {
       url:"https://www.youtube.com/@OpenBootcamp/playlists",
-      title:"Contenido gratuito que se adapta a ti-<strong>OpenBootcamp" 
+      title:"Contenido gratuito que se adapta a ti (OpenBootcamp)" 
    }
 ]
 
