@@ -263,7 +263,7 @@ footer p{
  
   header{
     margin: auto;
-    width: 90%;
+    width: 95%;
     display: flex;
     flex-direction:row;
     flex-wrap: wrap;
@@ -275,18 +275,8 @@ footer p{
     display: flex;
     flex-direction: column;
     margin:auto;
-    width: 95%;
-    /* border: 1px solid violet; */
-  }
-  header > .navbar > .icon-imgContainer{
-    width:70px;
-    height:70px;
-    margin-top: 30px;
-    /* border: 1px solid green; */
-  }
-  .icon-imgContainer img {
     width: 100%;
-    height: 100%;
+    /* border: 1px solid violet; */
   }
   .navbar > .links {
     margin: auto;
@@ -334,7 +324,7 @@ footer p{
   }
   #menu-toggle{
     display: flex;
-    width:200px;
+    width:150px;
     height: 40px;
     padding:10px;
     border-radius: 10px;
@@ -343,13 +333,13 @@ footer p{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bolder;
     font-size: 1.3rem;
-    margin: auto;
     margin-top: 50px;
     background-color: rgb(187, 183, 183);
     cursor: pointer;
     justify-content: center;
     text-align: center;
     align-items: center;
+    margin-left: 30px;
     transition: font-size 0.5s ease-in-out;
   }
   #menu-toggle:hover{
@@ -431,10 +421,9 @@ footer p{
     margin-top:100px;
   }
   h2{
-    margin: auto;
     text-align: center;
     margin-top: 10px;
-    font-size:2rem;
+    font-size:2.5rem;
   }
  
   #sobreMi, #tutoriales{
@@ -447,20 +436,28 @@ footer p{
     text-align: center;
     /* border:1px solid red */
   }
+  #sobreMi{
+    margin-left: 0px;
+    text-align: left;
+    width: 100%;
+    /* border: 1px solid red; */
+  }
   #sobreMi p{
-  text-align: center;
-  padding: 5px;
-  border-radius: 5px;
-  font-size:1.1rem;
-  /* border: 1px solid white; */
+    width: 100%;
+    padding: 5px;
+    font-size:1.4rem;
+  /* border: 1px solid yellow; */
   }
   #tutoriales > p{
-    margin-top: 30px;
+  text-align: left;
+  margin-top: 30px;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   padding: 5px;
   font-size:1.2rem;
+  width: 100%;
+  padding: 5px;
+  font-size:1.4rem;
   /* border: 1px solid white; */
   }
   #tutoriales .lista{
